@@ -61,7 +61,7 @@ export const loadPreferencesFromLocalStorage = (): ?PreferencesValues => {
 
     // Migrate renamed themes.
     if (values.themeName === 'GDevelop default') {
-      values.themeName = 'ClickEngine default Light';
+      values.themeName = 'SpriteSmith default Light';
     } else if (values.themeName === 'Dark') {
       values.themeName = 'Blue Dark';
     }

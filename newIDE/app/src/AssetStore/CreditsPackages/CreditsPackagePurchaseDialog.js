@@ -220,7 +220,7 @@ const CreditsPackagePurchaseDialog = ({
             <Line justifyContent="center">
               <BackgroundText>
                 <Trans>
-                  Once you're done, come back to ClickEngine and the credits
+                  Once you're done, come back to SpriteSmith and the credits
                   will be added to your account automatically.
                 </Trans>
               </BackgroundText>

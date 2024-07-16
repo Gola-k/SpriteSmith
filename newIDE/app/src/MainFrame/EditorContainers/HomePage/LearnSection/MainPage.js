@@ -254,7 +254,7 @@ const MainPage = ({
           <Line noMargin>
             <Text noMargin>
               <Trans>
-                Learn everything about clickEngine from the ground up
+                Learn everything about SpriteSmith from the ground up
               </Trans>
             </Text>
           </Line>

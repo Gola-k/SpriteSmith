@@ -89,7 +89,7 @@ const commandsList: { [CommandName]: CommandMetadata } = {
   // General commands
   QUIT_APP: {
     area: 'GENERAL',
-    displayText: t`Close ClickEngine`,
+    displayText: t`Close SpriteSmith`,
     handledByElectron: true,
   },
   OPEN_PROJECT_MANAGER: {

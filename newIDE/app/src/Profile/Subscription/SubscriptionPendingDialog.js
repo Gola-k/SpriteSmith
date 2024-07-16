@@ -197,7 +197,7 @@ export default function SubscriptionPendingDialog({
                     disabled={isLoading}
                     maxLength={discordUsernameConfig.maxLength}
                     helperMarkdownText={i18n._(
-                      t`Add your Discord username to get access to a dedicated channel! Join the [ClickEngine Discord]().`
+                      t`Add your Discord username to get access to a dedicated channel! Join the [SpriteSmith Discord]().`
                     )}
                   />
                 </Line>

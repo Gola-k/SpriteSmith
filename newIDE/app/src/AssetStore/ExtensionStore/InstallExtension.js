@@ -79,7 +79,7 @@ export const importExtension = async (
   } catch (rawError) {
     showErrorBox({
       message: i18n._(
-        t`An error happened while loading this extension. Please check that it is a proper extension file and compatible with this version of ClickEngine`
+        t`An error happened while loading this extension. Please check that it is a proper extension file and compatible with this version of SpriteSmith`
       ),
       rawError,
       errorId: 'extension-loading-error',

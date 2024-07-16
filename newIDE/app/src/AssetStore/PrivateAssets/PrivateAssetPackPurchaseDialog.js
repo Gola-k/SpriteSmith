@@ -288,7 +288,7 @@ const PrivateAssetPackPurchaseDialog = ({
             <Line justifyContent="center">
               <BackgroundText>
                 <Trans>
-                  Once you're done, come back to ClickEngine and the assets will
+                  Once you're done, come back to SpriteSmith and the assets will
                   be added to your account automatically.
                 </Trans>
               </BackgroundText>

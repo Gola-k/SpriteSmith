@@ -19,7 +19,7 @@ import './Global/Font.css';
 type Theme = $Exact<typeof DefaultLightTheme>;
 export type GDevelopTheme = $PropertyType<Theme, 'gdevelopTheme'>;
 type FullTheme = {| gdevelopTheme: GDevelopTheme, muiTheme: Object |};
-const defaultThemeName = 'ClickEngine default Dark';
+const defaultThemeName = 'SpriteSmith default Dark';
 
 export function getFullTheme({
   themeName,

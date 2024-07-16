@@ -1092,9 +1092,9 @@ export default class AuthenticatedUserProvider extends React.Component<
       const username = profile ? profile.username : null;
       this.showUserSnackbar({
         message: username ? (
-          <Trans>👋 Welcome to ClickEngine {username}!</Trans>
+          <Trans>👋 Welcome to SpriteSmith {username}!</Trans>
         ) : (
-          <Trans>👋 Welcome to ClickEngine!</Trans>
+          <Trans>👋 Welcome to SpriteSmith!</Trans>
         ),
       });
     } catch (apiCallError) {

@@ -139,10 +139,10 @@ class Bootstrapper extends Component<{}, State> {
       : 'Please restart the application or reinstall the latest version if the problem persists.';
 
     this.setState({
-      loadingMessage: `Unable to load ClickEngine. ${message}`,
+      loadingMessage: `Unable to load SpriteSmith. ${message}`,
     });
     showErrorBox({
-      message: `Unable to load ClickEngine. ${message}`,
+      message: `Unable to load SpriteSmith. ${message}`,
       rawError,
       errorId: 'editor-load-error',
     });

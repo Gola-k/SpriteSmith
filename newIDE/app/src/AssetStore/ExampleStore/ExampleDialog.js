@@ -135,7 +135,7 @@ export function ExampleDialog({
           <AlertMessage kind="error">
             <Trans>
               Unfortunately, this example requires a newer version of
-              ClickEngine to work. Update ClickEngine to be able to open this
+              SpriteSmith to work. Update SpriteSmith to be able to open this
               example.
             </Trans>
           </AlertMessage>

@@ -505,7 +505,7 @@ const GetStartedSection = ({
           >
             <Text size="title" align="center">
               {!profile || isNewUser ? (
-                <Trans>Welcome to ClickEngine!</Trans>
+                <Trans>Welcome to SpriteSmith!</Trans>
               ) : profile && profile.username ? (
                 <Trans>Good to see you {profile.username}!</Trans>
               ) : (

@@ -56,7 +56,7 @@ const buildElectronMenuFromDeclarativeTemplate = (window, mainMenuTemplate) => {
  */
 const buildPlaceholderMainMenu = () => {
   const placeholderMenuItem = {
-    label: 'ClickEngine is loading...',
+    label: 'SpriteSmith is loading...',
     enabled: false,
   };
 

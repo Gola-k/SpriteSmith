@@ -188,7 +188,7 @@ const ProfileDialog = ({ open, onClose }: Props) => {
               {/* <Line alignItems="center">
                 <Column noMargin>
                   <Text size="block-title">
-                    <Trans>ClickEngine credits</Trans>
+                    <Trans>SpriteSmith credits</Trans>
                   </Text>
                   <Text size="body" noMargin>
                     <Trans>

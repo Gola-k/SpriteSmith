@@ -198,7 +198,7 @@ const CreateAccountDialog = ({
         </Text>
         <Column noMargin alignItems="center">
           <Text size="body2" noMargin align="center">
-            <Trans>Welcome to ClickEngine!</Trans>
+            <Trans>Welcome to SpriteSmith!</Trans>
           </Text>
           <LineStackLayout noMargin>
             <Text size="body2" noMargin align="center">
@@ -237,7 +237,7 @@ const CreateAccountDialog = ({
         </div>
         <BackgroundText>
           <MarkdownText
-            translatableSource={t`By creating an account and using ClickEngine, you agree to the [Terms and Conditions]().`}
+            translatableSource={t`By creating an account and using SpriteSmith, you agree to the [Terms and Conditions]().`}
           />
         </BackgroundText>
       </ColumnStackLayout>

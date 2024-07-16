@@ -497,7 +497,7 @@ const NewProjectSetupDialog = ({
                   <SelectOption
                     key={storageProvider.internalName}
                     value={storageProvider.internalName}
-                    label={t`ClickEngine Cloud`}
+                    label={t`SpriteSmith Cloud`}
                     disabled={storageProvider.disabled}
                   />
                 ))}

@@ -150,7 +150,7 @@ const ProfileDetails = ({
         ) {
           showAlert({
             title: t`Discord user not found`,
-            message: t`Ensure you don't have any typo in your username and that you have joined the ClickEngine Discord server.`,
+            message: t`Ensure you don't have any typo in your username and that you have joined the SpriteSmith Discord server.`,
           });
           return;
         }
@@ -232,11 +232,11 @@ const ProfileDetails = ({
                 {!discordUsername ? (
                   !canUserBenefitFromDiscordRole ? (
                     <MarkdownText
-                      translatableSource={t`No discord username defined. Add it and get a Gold, Pro or Education subscription to claim your role on the [ClickEngine Discord]().`}
+                      translatableSource={t`No discord username defined. Add it and get a Gold, Pro or Education subscription to claim your role on the [SpriteSmith Discord]().`}
                     />
                   ) : (
                     <MarkdownText
-                      translatableSource={t`No discord username defined. Add it to claim your role on the [ClickEngine Discord]().`}
+                      translatableSource={t`No discord username defined. Add it to claim your role on the [SpriteSmith Discord]().`}
                     />
                   )
                 ) : (
@@ -246,7 +246,7 @@ const ProfileDetails = ({
                       <>
                         {' - '}
                         <MarkdownText
-                          translatableSource={t`Get a Gold or Pro subscription to claim your role on the [ClickEngine Discord]().`}
+                          translatableSource={t`Get a Gold or Pro subscription to claim your role on the [SpriteSmith Discord]().`}
                         />
                       </>
                     )}

@@ -212,7 +212,7 @@ export const buildMainMenuDeclarativeTemplate = ({
               ? [
                   { type: 'separator' },
                   {
-                    label: i18n._(t`Exit ClickEngine`),
+                    label: i18n._(t`Exit SpriteSmith`),
                     accelerator: getElectronAccelerator(
                       shortcutMap['QUIT_APP']
                     ),
@@ -374,10 +374,10 @@ export const buildMainMenuDeclarativeTemplate = ({
   // macOS has a menu with the name of the app.
   if (isMacLike() && isApplicationTopLevelMenu) {
     template.unshift({
-      label: i18n._(t`ClickEngine`),
+      label: i18n._(t`SpriteSmith`),
       submenu: [
         {
-          label: i18n._(t`About ClickEngine`),
+          label: i18n._(t`About SpriteSmith`),
           onClickSendEvent: 'main-menu-open-about',
         },
         { type: 'separator' },

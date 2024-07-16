@@ -54,7 +54,7 @@ const LanguageSelector = ({ onLanguageChanged }: Props) => {
     <Column noMargin>
       <Line noMargin expand>
         <SelectField
-          floatingLabelText={<Trans>Choose ClickEngine language</Trans>}
+          floatingLabelText={<Trans>Choose SpriteSmith language</Trans>}
           value={values.language}
           onChange={(e, i, value: string) => {
             setLanguage(value);
@@ -82,7 +82,7 @@ const LanguageSelector = ({ onLanguageChanged }: Props) => {
               // Window.openExternalURL('https://crowdin.com/project/gdevelop')
             }
           >
-            help to translate ClickEngine in your language
+            help to translate SpriteSmith in your language
           </Link>
           .
         </Trans>
