@@ -244,7 +244,7 @@ export const GameProvider = ({ children }) => {
       // Fetch bought NFTs for the connected account
       const boughtNFTs = await contract.fetchMyBoughtNFTs();
       // const boughtNFTs = [];
-      console.log('fetchMyBoughtNFTs', boughtNFTs);
+      console.log('boughtNFTs: ', boughtNFTs);
 
       // Initialize an array to store fetched NFTs
       const myBoughtNFTs = [];
@@ -267,7 +267,7 @@ export const GameProvider = ({ children }) => {
 
         const response = await axios.get(GametokenURI);
         const { data } = response;
-        console.log('NFT metadata:', data);
+        console.log('fetchMyBoughtNFTs: ', data);
 
         const { name, fileURL, imageURL, description, price } = data;
 
@@ -299,7 +299,7 @@ export const GameProvider = ({ children }) => {
 
     try {
       const provider = new ethers.JsonRpcProvider(
-        'https://dchaintestnet-2713017997578000-1.jsonrpc.testnet.sagarpc.io'
+        'https://eth-sepolia.g.alchemy.com/v2/0Hy758w6BteirxoloAs_K_vgQhMZuCIc'
       );
 
       const contract = fetchContract(provider);
