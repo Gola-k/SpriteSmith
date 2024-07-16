@@ -341,9 +341,7 @@ const MainPage = ({
               {!isMobile && (
                 <FlatButton
                   onClick={() => {
-                    Window.openExternalURL(
-                      'https://airtable.com/shrv295oHlsuS69el'
-                    );
+                    Window.openExternalURL('');
                   }}
                   primary
                   leftIcon={<TranslateIcon />}
