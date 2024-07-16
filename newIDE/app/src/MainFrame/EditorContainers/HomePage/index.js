@@ -516,7 +516,7 @@ export const HomePage = React.memo<Props>(
                       onOpenProfile={onOpenProfile}
                     />
                   )}
-                  {activeTab === 'team-view' &&
+                  {/* {activeTab === 'team-view' &&
                     (canUseClassroomFeature(limits) ? (
                       <TeamSection
                         project={project}
@@ -538,7 +538,7 @@ export const HomePage = React.memo<Props>(
                         onResetForm={onResetEducationForm}
                         onLogin={onOpenLoginDialog}
                       />
-                    ))}
+                    ))} */}
                 </div>
                 <HomePageMenu
                   activeTab={activeTab}

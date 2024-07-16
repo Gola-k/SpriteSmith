@@ -41,7 +41,7 @@ export const openExampleInWebApp = (example: Example) => {
   Window.openExternalURL(
     `${
       isDev ? 'http://localhost:3000' : 'https://editor.gdevelop.io'
-    }/?create-from-example=${example.slug}`
+    }/?project=${example.projectFileUrl}`
   );
 };
 
@@ -134,8 +134,9 @@ export function ExampleDialog({
         {!isCompatible && (
           <AlertMessage kind="error">
             <Trans>
-              Unfortunately, this example requires a newer version of GDevelop
-              to work. Update GDevelop to be able to open this example.
+              Unfortunately, this example requires a newer version of
+              ClickEngine to work. Update ClickEngine to be able to open this
+              example.
             </Trans>
           </AlertMessage>
         )}

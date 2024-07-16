@@ -253,7 +253,9 @@ const MainPage = ({
           </Line>
           <Line noMargin>
             <Text noMargin>
-              <Trans>Learn everything about GDevelop from the ground up</Trans>
+              <Trans>
+                Learn everything about clickEngine from the ground up
+              </Trans>
             </Text>
           </Line>
           {limits &&

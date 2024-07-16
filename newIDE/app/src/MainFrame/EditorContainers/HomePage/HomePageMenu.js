@@ -116,14 +116,14 @@ const homePageMenuTabs: { [tab: string]: HomePageMenuTab } = {
   //     <WebIcon fontSize={fontSize} color={color} />
   //   ),
   // },
-  'team-view': {
-    label: <Trans>Classrooms</Trans>,
-    tab: 'team-view',
-    id: 'team-view-tab',
-    getIcon: ({ color, fontSize }) => (
-      <BookLeafIcon fontSize={fontSize} color={color} />
-    ),
-  },
+  // 'team-view': {
+  //   label: <Trans>Classrooms</Trans>,
+  //   tab: 'team-view',
+  //   id: 'team-view-tab',
+  //   getIcon: ({ color, fontSize }) => (
+  //     <BookLeafIcon fontSize={fontSize} color={color} />
+  //   ),
+  // },
 };
 
 export const getTabsToDisplay = ({
@@ -140,11 +140,11 @@ export const getTabsToDisplay = ({
   const tabs = [
     // 'get-started',
     'build',
-    canUseClassroomFeature(limits)
-      ? 'team-view'
-      : isNativeMobileApp()
-      ? null
-      : 'team-view',
+    // canUseClassroomFeature(limits)
+    //   ? 'team-view'
+    //   : isNativeMobileApp()
+    //   ? null
+    //   : 'team-view',
     // 'manage',
     'shop',
     // 'learn',
@@ -191,7 +191,7 @@ export const HomePageMenu = ({
       ),
     },
     {
-      label: <Trans>About GDevelop</Trans>,
+      label: <Trans>About ClickEngine</Trans>,
       id: 'about-gdevelop',
       // onClick: onOpenAbout,
       onClick: () => {},
