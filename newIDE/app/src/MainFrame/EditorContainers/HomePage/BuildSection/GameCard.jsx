@@ -158,10 +158,13 @@ import Loader from './Loader';
 import './NFTCard.css';
 import { ethers } from 'ethers';
 
-const shortenAddress = address => `${address.slice(0, 5)}...${address.slice(address.length - 4)}`;
+const shortenAddress = address =>
+  `${address.slice(0, 5)}...${address.slice(address.length - 4)}`;
 
 const GameCard = ({ nft }) => {
-  const { nftCurrency, isLoadingNFT, buyNftWithaccessID } = useContext(GameContext);
+  const { nftCurrency, isLoadingNFT, buyNftWithaccessID } = useContext(
+    GameContext
+  );
   const [isBought, setIsBought] = useState(false);
   const [folderContentUrl, setFolderContentUrl] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -182,12 +185,12 @@ const GameCard = ({ nft }) => {
 
   const handlePlay = async () => {
     // Open the preview of the game using the zip url, download the zip and use it to open the game
-    const url = { url: nft.fileURL };// Assuming nft.fileURL contains the URL
+    const url = { url: nft.fileURL }; // Assuming nft.fileURL contains the URL
     setIsLoading(true);
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:3000/play', {
+      const response = await fetch('https://chainlink.chainbros.xyz/play', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(url),
@@ -204,13 +207,13 @@ const GameCard = ({ nft }) => {
       // Wait until the folderContentUrl is set before opening the new window
       if (res) {
         const newWindow = window.open(res, '__blank');
-        const folderName = res.split('/').pop()
-        
+        const folderName = res.split('/').pop();
+
         const checkWindowClosed = setInterval(async () => {
           if (newWindow.closed) {
             clearInterval(checkWindowClosed);
             // console.log("i was here")
-            await fetch('http://localhost:3000/delete-folder', {
+            await fetch('https://chainlink.chainbros.xyz/delete-folder', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -222,7 +225,6 @@ const GameCard = ({ nft }) => {
           }
         }, 1000);
       }
-      
     } catch (err) {
       console.error(err);
       setError('Failed to play the game. Please try again.');
@@ -269,5 +271,3 @@ const GameCard = ({ nft }) => {
 };
 
 export default GameCard;
-
-
